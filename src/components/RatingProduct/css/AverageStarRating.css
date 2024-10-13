@@ -1,0 +1,141 @@
+.review-toggle:hover {
+    text-decoration: underline;
+    color: rgb(223, 149, 11); /* Change to your desired hover color */
+  }
+  
+  .rating-breakdown {
+    margin: 20px 0;  
+  }
+  .rating-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .rating-bar span {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  .bar-container {
+    width: 200px; /* Fixed width for consistency */
+    background-color: #e0e0e0; /* Light grey background for unfilled portion */
+    height: 10px; /* Height of the bar */
+    margin-right: 10px; /* Space between the bar and the percentage */
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+    border: 1px solid #ccc; /* Add border around the box */
+  }
+  
+  .filled-bar {
+    height: 100%;
+    background-color: #f0c14b; /* Amazon-style yellow color */
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .review-popups {
+    max-height: 50vh; /* Adjust based on your preference */
+    overflow-y: auto; /* Enables vertical scrolling */
+    width: 50vw; /* Adjust width as needed */
+    text-align: left;
+  }
+  
+  .review-popups h3 {
+    margin-top: 0;
+    font-size: 24px;
+  }
+  
+  .review-popups div {
+    margin-bottom: 10px;
+  }
+  
+  .review-popups hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+  }
+  .review-popup  , .popupReviews{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1100;
+  }
+  .rating-distribution {
+    margin-top: 20px;
+  }
+  .comments-section {
+    margin-top: 20px;
+  }
+  .comment {
+    margin-bottom: 10px;
+  }
+
+  .star-rating .star {
+    font-size: 24px;
+    cursor: default;
+  }
+  
+  .star-on {
+    color: gold;
+    text-shadow: 0 0 2px orange;
+  }
+  
+  .star-partial  {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    color: gold;
+    text-shadow: 0 0 2px orange;
+  
+  }
+  .star-partials  {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    color: gold;
+    text-shadow: 0 0 2px orange;
+  
+  }
+  
+  .star-partial::before {
+    content: "\2605"; /* Unicode star character */
+    position: absolute; 
+    width: 100%;
+    color: white;
+    text-shadow: 0 0 2px rgb(247, 129, 2);
+    overflow: hidden;
+    clip-path: inset(0 0 0 50%); /* Clip left half */
+  }
+  
+  .star-partials::before {
+    content: "\2605"; /* Unicode star character */
+    position: absolute; 
+    width: 100%;
+    color: white;
+    text-shadow: 0 0 2px rgb(247, 129, 2);
+    overflow: hidden;
+    clip-path: inset(0 0 0 35%); /* Clip left half */
+  }
+  
+  .star-off {
+    color: white;
+    text-shadow: 0 0 3px orange;
+  }
+  
+  
+  .star-rating .on {
+    color: gold;
+    text-shadow: 0 0 2px orange; /*Submtting Star Rating Creates a subtle border effect */
+  }
+  
+  
+  .star-rating .off {
+    color: white;
+    text-shadow: 0 0 3px orange; /*before Submtting Star Rating Creates a subtle border effect */
+  }
